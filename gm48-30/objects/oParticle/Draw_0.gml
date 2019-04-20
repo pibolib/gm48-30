@@ -1,0 +1,9 @@
+if(showShadow)
+{
+	draw_set_color(c_black);
+	draw_set_alpha(0.3);
+	draw_ellipse(x-sprite_width/2,y-sprite_height/4,x+sprite_width/2,y+sprite_height/4,false);
+	draw_set_color(c_white);
+	draw_set_alpha(1);
+}
+draw_sprite_ext(sprite_index,0,x,y-z,image_xscale,image_yscale,image_angle,color,1);
