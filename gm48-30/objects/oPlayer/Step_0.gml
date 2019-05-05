@@ -76,7 +76,7 @@ if(!oGame.pauseMode)
 		}
 		vsp = 0;	
 	}
-	if(mouse_check_button_pressed(mb_left) and shootTime = 0)
+	if(mouse_check_button(mb_left) and shootTime = 0)
 	{
 		instance_create_layer(x,y-16,"game",oBullet);
 		shootTime = oGame.gunReload;

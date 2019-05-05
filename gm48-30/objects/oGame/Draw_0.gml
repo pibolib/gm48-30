@@ -9,7 +9,7 @@ if(room = rMenu)
 		}
 	}
 	draw_sprite(sIRRats,0,16,0);
-	draw_text_unscaled(0,154,"Post-Jam Beta 1. DO NOT DISTRIBUTE!");
+	draw_text_unscaled(0,154,version+versionType+versionNumber+"DO NOT DISTRIBUTE!");
 }
 else
 {

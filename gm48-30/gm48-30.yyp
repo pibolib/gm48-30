@@ -207,6 +207,14 @@
             }
         },
         {
+            "Key": "3f05ab67-5725-4edc-82e0-a201273af302",
+            "Value": {
+                "id": "75dd1875-1771-4dfa-92a1-acdb4891bbb8",
+                "resourcePath": "objects\\oCheckboxFullscreen\\oCheckboxFullscreen.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "4203edb1-deff-4193-9489-83317187a97f",
             "Value": {
                 "id": "f9a2513b-22b4-4331-a587-d22b5166c3f3",
@@ -452,6 +460,14 @@
                 "id": "3eb97ed3-4833-42e8-89c9-1505284b4bcc",
                 "resourcePath": "objects\\oCheckboxScreenshake\\oCheckboxScreenshake.yy",
                 "resourceType": "GMObject"
+            }
+        },
+        {
+            "Key": "7dd36a4a-f1ef-4d01-b67c-9a2f981ee172",
+            "Value": {
+                "id": "be10f5c1-2ac1-4773-b2eb-ec416cf4bedd",
+                "resourcePath": "scripts\\difference\\difference.yy",
+                "resourceType": "GMScript"
             }
         },
         {
@@ -911,7 +927,8 @@
         "a957cb03-e9ed-4528-8fb4-ab31585df144",
         "0cdae16a-0f26-489c-8df4-dab75a9075d4",
         "bc87660d-54b0-4f71-b15f-9b6f9bf9d997",
-        "75feb339-da6c-417d-a3a0-94eee18decfc"
+        "75feb339-da6c-417d-a3a0-94eee18decfc",
+        "7dd36a4a-f1ef-4d01-b67c-9a2f981ee172"
     ],
     "tutorial": ""
 }

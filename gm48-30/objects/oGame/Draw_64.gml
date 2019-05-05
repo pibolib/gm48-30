@@ -11,9 +11,9 @@ if(room != rPrep and room != rMenu and room != rWin and room != rLose)
 }
 if(room = rPrep)
 {
-	draw_text_unscaled(12,12,"FUNDS: $"+string(cash));
-	draw_text_unscaled(12,19,"DEBTS: -$"+string(bills));
-	draw_text_unscaled(12,29,"USABLE: $"+string(cash - bills));
+	draw_text_unscaled(12,12,"FUNDS: $"+string(dispCash));
+	draw_text_unscaled(12,19,"DEBTS: -$"+string(dispBills));
+	draw_text_unscaled(12,29,"USABLE: $"+string(dispDiff));
 	draw_text_unscaled(12,39,"TOTAL CASH: $"+string(totalCash));
 	draw_text(0,148,"PHASE: "+string(phase+1)+" / 5");
 	if(phase = 0)

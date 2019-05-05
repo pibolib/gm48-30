@@ -34,6 +34,46 @@ if(!pauseMode)
 		transitionTo = rPrep;
 		time = 0;
 	}
+	if(transitionAlpha < 0.3 and room = rPrep and transitionTo = rPrep)
+	{
+		
+		if(difference(dispCash,cash) > 100)
+		{
+			dispCash = approach(dispCash,cash,100);	
+		}
+		else if(difference(dispCash,cash) > 10)
+		{
+			dispCash = approach(dispCash,cash,10);	
+		}
+		else if(difference(dispCash,cash) > 0)
+		{
+			dispCash = approach(dispCash,cash,1);	
+		}
+		else if(difference(dispBills,bills) > 100)
+		{
+			dispBills = approach(dispBills,bills,100);		
+		}
+		else if(difference(dispBills,bills) > 10)
+		{
+			dispBills = approach(dispBills,bills,10);
+		}
+		else if(difference(dispBills,bills) > 0)
+		{
+			dispBills = approach(dispBills,bills,1);
+		}
+		else if(difference(dispDiff,cash-bills) > 100 and dispCash = cash and dispBills = bills)
+		{
+			dispDiff = approach(dispDiff,cash-bills,100);	
+		}
+		else if(difference(dispDiff,cash-bills) > 10 and dispCash = cash and dispBills = bills)
+		{
+			dispDiff = approach(dispDiff,cash-bills,10);
+		}
+		else if(difference(dispDiff,cash-bills) > 0 and dispCash = cash and dispBills = bills)
+		{
+			dispDiff = approach(dispDiff,cash-bills,1);	
+		}
+	}
 	if(room != rPrep and room != rMenu and room != rWin and room != rLose and !instance_exists(oCrate) and !instance_exists(oEnemy) and !instance_exists(oCoin) and !instance_exists(oClock))
 	{
 		transitionTo = rPrep;
@@ -64,7 +104,7 @@ if(!pauseMode)
 		bills = 25;
 		totalCash = 0;
 		phase = 0;
-		gunDMG = 2;
+		gunDMG = 3;
 		gunReload = 30;
 		transitionTo = rMenu;	
 	}
@@ -77,3 +117,4 @@ else if(pauseMode and keyboard_check_pressed(vk_escape))
 {
 	pauseMode = false;	
 }
+window_set_fullscreen(fullscreen);

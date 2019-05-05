@@ -12,3 +12,9 @@ if(phase = 5 and cash >= bills and room = rPrep)
 {
 	transitionTo = rWin;	
 }
+if(room = rPrep)
+{
+	dispCash = 0;
+	dispBills = 0;
+	dispDiff = 0;
+}

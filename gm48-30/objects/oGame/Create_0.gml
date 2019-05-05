@@ -15,6 +15,7 @@ gameTime = 0;
 titleScreen = -1;
 screenshake = true;
 particles = true;
+fullscreen = false;
 //GUN STATISTICS
 
 //gunDMG = 3;
@@ -39,3 +40,10 @@ debugMode = false;
 
 transitionTo = rMenu;
 transitionAlpha = 0;
+dispCash = 0;
+dispBills = 0;
+dispDiff = 0;
+dispTotal = 0;
+version = "Post-Jam ";
+versionType = "Beta ";
+versionNumber = "2 ";

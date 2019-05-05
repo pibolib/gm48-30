@@ -1,0 +1,1 @@
+return abs(abs(argument1)-abs(argument0));
