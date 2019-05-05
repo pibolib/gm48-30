@@ -5,3 +5,5 @@ hsp = random_range(-1,1);
 vsp = random_range(-1,1);
 dsp = random_range(-3,-1);
 grv = 0.05;
+image_xscale = 0;
+image_yscale = 0;

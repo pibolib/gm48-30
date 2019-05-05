@@ -1,2 +1,11 @@
-mhp = 60;
-hp = irandom(mhp);
+mhp = irandom_range(4,6);
+hp = mhp;
+z = 0;
+angle = random_range(-180,180);
+rsp = 0;
+hsp = 0;
+vsp = 0;
+dsp = 0;
+grv = 0.1;
+xOffset = 0;
+xOffsetTime = 0;

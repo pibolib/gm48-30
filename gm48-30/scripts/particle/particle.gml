@@ -5,12 +5,15 @@
 ///@arg start
 ///@arg color
 
-with(instance_create_layer(x,y,"game",oParticle))
+if(oGame.particles)
 {
-	x = argument0;
-	y = argument1;
-	mode = argument2;
-	image_xscale = argument3;
-	image_yscale = image_xscale;
-	color = argument4;
+	with(instance_create_layer(x,y,"game",oParticle))
+	{
+		x = argument0;
+		y = argument1;
+		mode = argument2;
+		image_xscale = argument3;
+		image_yscale = image_xscale;
+		color = argument4;
+	}
 }

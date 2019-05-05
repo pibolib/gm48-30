@@ -1,0 +1,17 @@
+dir = irandom_range(0,3);
+cash = irandom_range(30,40);
+atkTime = 0;
+topCash = cash;
+dtime = 0;
+time = 0;
+hsp = 0;
+vsp = 0;
+dsp = 0;
+z = 0;
+invun = 0;
+grv = 0.2;
+dead = false;
+alterX = 0;
+red = 255;
+green = 255;
+blue = 255;

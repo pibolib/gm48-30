@@ -1,0 +1,12 @@
+draw_set_alpha(1-oGame.transitionAlpha);
+draw_sprite_ext(sprite_index,image_index,x,y,image_xscale,image_yscale,image_angle,image_blend,1-oGame.transitionAlpha);
+draw_set_color(c_red);
+draw_set_halign(fa_center);
+draw_text(x+40,y+2,"START");
+draw_set_halign(fa_left);
+draw_set_color(c_white);
+if(collision_point(mouse_x,mouse_y,oButtonStart,false,false))
+{
+	draw_sprite(sCrosshair,0,ceil(mouse_x),ceil(mouse_y));	
+}
+draw_set_alpha(1);
